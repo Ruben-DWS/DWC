@@ -1,0 +1,53 @@
+#contenedor1{
+
+    text-align: center;
+    
+    margin-left: 200px;
+    margin-right: 200px;
+
+    background-color: #4197a7;
+    border-radius: 30px;
+}
+
+#contenedor2{
+ 
+   
+    justify-content: center;
+}
+.inputOperacion{
+
+    border-radius: 30px;
+    padding: 2%;
+    text-align: center;
+   
+}
+
+#contenedor3{
+    justify-content: center;
+    display: flex;
+
+   
+}
+
+.contenedoresInput{
+
+    margin-left: 1%;
+}
+
+.inputResultado{
+
+    max-width: 10%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+button{
+    
+        padding: 10px 20px;
+        background-color: #4c90af;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    
+}

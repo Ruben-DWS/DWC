@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+
+    <div id="contenedor1">
+        <h2>Calculadora</h2>
+
+
+        <div id="contenedor2">
+
+            <div id="contenedor3">
+                <div class="contenedoresInput">
+                    <input type="text" placeholder="Escribe el primer numero"class="inputOperacion" id="num1">
+                </div>
+                <div class="contenedoresInput">
+                    <input type="text" placeholder="Pon el simbolo aqui" class="inputOperacion" id="signo"> 
+                </div>
+                <div class="contenedoresInput">
+                    <input type="text" placeholder="Escribe el primer numero"class="inputOperacion" id="num2">
+                </div>
+            </div>
+        </div>
+
+        <br><br><br>
+
+    
+        <div>
+            <input type="text" class="inputResultado" id="resultado" placeholder="Resultado" readonly>
+            <button onclick="calcular()">Calcular</button
+        </div>
+    
+        
+
+
+
+    </div>
+
+  
+
+    <script>
+        function calcular() {
+            
+            var valor1 = parseFloat(document.getElementById("num1").value);
+            var valor2 = parseFloat(document.getElementById("num2").value);
+            var signo = document.getElementById("signo").value.trim();
+            var resultado = 0;
+    
+            
+            if (signo === "x" || signo === "*") {
+                resultado = valor1 * valor2;
+            } else if (signo === "+") {
+                resultado = valor1 + valor2;
+            } else if (signo === "-") {
+                resultado = valor1 - valor2;
+            } else if (signo === "/") {
+                if (valor2 !== 0) {
+                    resultado = valor1 / valor2;
+                } else {
+                    alert("No se puede dividir entre 0");
+                    return;
+                }
+            } else {
+                alert("Por favor ingresa un signo válido (+, -, *, /)");
+                return;
+            }
+    
+            
+            document.getElementById("resultado").value = resultado;
+        }
+    </script>
+
+
+
+    
+</body>
+</html>
