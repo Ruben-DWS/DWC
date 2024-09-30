@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+
+    <main>
+
+        <h1>Formulario Cliente</h1>
+        
+        <form onsubmit="nuevoCliente()">
+
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre">
+            <label for="DNI">DNI: </label>
+            <input type="text" id="DNI">
+            <label for="Movil">Movil: </label>
+            <input type="text" id="Movil">
+            <label for="direccion">Direccion: </label>
+            <input type="text" id="direccion">
+
+            <button type="button" onclick="nuevoCliente()">Enviar</button>
+
+        </form>
+
+        <div id="mensaje"></div>
+
+    </main>
+
+
+
+    <script type="module" src="main.js"></script>
+
+</body>
+</html>
