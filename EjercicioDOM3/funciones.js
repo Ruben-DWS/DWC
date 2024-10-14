@@ -41,10 +41,9 @@ export function aniadirArticulo() {
 
    
     let h1 = document.createElement('h1');
- 
-
     h1.innerText = 'Ruben Garcia Verdugo';
-    h1.className = 'title';
-
+    h1.className = 'color: red';
+    
     return h1;
 }
+

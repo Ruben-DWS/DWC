@@ -36,12 +36,34 @@ function mainagregarArticulo(){
 
 function maincrearStyle(){
 
-    let div = document.createElement('div');
-    let body = document.querySelector('body');
+    let div = document.querySelector('#divEstilo');
+   
+    
 
-    div.appendChild(creaConEstilo());
-    body.appendChild(div);
+    let h1 = document.createElement('h1');
 
+    div.style.color = 'red';
+
+    h1.appendChild(creaConEstilo());
+
+    div.appendChild(h1);
+
+    cambiarSyle();
+}
+
+function cambiarSyle(){
+    let div = document.querySelector('#divEstilo');
+    let button = document.querySelector('#crearStyle');
+
+    if(div.style.color == 'red'){
+
+        div.style.color == 'blue';
+        button.textContent = 'Cambia a Rojo'
+
+    }else{
+         div.style.color == 'red';
+        button.textContent = 'Cambia a Azul'
+    }
 
 }
 
